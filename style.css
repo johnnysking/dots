@@ -132,16 +132,5 @@
   
       animation: rotateImage 50s linear infinite;
   
-  }
+  }  
   
-  /* .shadow {
-      display: block;   
-      width: 350px;
-      height: 25%;
-      border-radius: 50%;
-    
-      background: radial-gradient(50% 50%, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0) 60%);
-     
-      margin: 0 auto;
-  
-  } */
