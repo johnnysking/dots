@@ -1,0 +1,147 @@
+:root{
+    --xPos: 0;
+    --yPos: 0;
+  }
+  
+  @keyframes rotateImage{
+    100%{
+      background-position: var(--xPos) var(--yPos);
+    }
+  }
+  
+  .grid-container {
+    width: 100vw;
+    height: 100vh;   
+      
+    overflow: hidden;   
+  }
+  .container {
+    width: 50vw;
+    height: 50vh; 
+    
+    margin: 0 auto;
+  }
+  
+  .sphere{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+     
+    width: 300px;
+    height: 325px;   
+  
+    border-radius: 50%;
+    background-image: url("img/Capture\ d’écran\ 2024-01-09\ 073122.png"); 
+  
+    margin: 2% auto;
+   }
+  
+  .top, .middle, .bottom{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      width: 100%;
+      height: 33%;    
+   
+   
+  }
+  
+  .topLeft, .topMiddle, .topRight{
+      display: flex;
+      width: 33%;
+      height: 100%;
+  }
+  
+  .left, .right{
+      width: 50%;
+      height: 100%;
+  }
+  
+  .bottomLeft, .bottomMiddle, .bottomRight{
+      width: 33%;
+      height: 100%;   
+  }
+  
+  
+  .topLeftAnimation{
+  
+      --xPos: -5000px;
+      --yPos: -5000px;
+  
+      animation: rotateImage 50s linear infinite;
+  
+  }
+  
+  .topMiddleAnimation{
+  
+      --xPos: 0px;
+      --yPos: -5000px;
+  
+      animation: rotateImage 50s linear infinite;
+  }
+  
+  .topRightAnimation{
+  
+      --xPos: 5000px;
+      --yPos: -5000px;
+  
+      animation: rotateImage 50s linear infinite;
+  }
+  
+  .leftAnimation{
+  
+      --xPos: -5000px;
+      --yPos: 0px;  
+      
+      animation: rotateImage 50s linear infinite;
+  
+  }
+  
+  .rightAnimation{
+  
+      --xPos: 5000px;
+      --yPos: 0px;
+  
+      animation: rotateImage 50s linear infinite;
+  
+  }
+  
+  .bottomLeftAnimation{
+  
+      --xPos: -5000px;
+      --yPos: 5000px;
+  
+  
+      animation: rotateImage 50s linear infinite;
+  
+  }
+  
+  .bottomMiddleAnimation{
+  
+      --xPos: 0;
+      --yPos: 5000px;    
+  
+      animation: rotateImage 50s linear infinite;
+  
+  }
+  
+  .bottomRightAnimation{
+  
+      --xPos: 5000px;
+      --yPos: 5000px;
+  
+      animation: rotateImage 50s linear infinite;
+  
+  }
+  
+  /* .shadow {
+      display: block;   
+      width: 350px;
+      height: 25%;
+      border-radius: 50%;
+    
+      background: radial-gradient(50% 50%, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0) 60%);
+     
+      margin: 0 auto;
+  
+  } */
